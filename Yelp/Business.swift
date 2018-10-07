@@ -21,7 +21,7 @@ class Business: NSObject {
         name = dictionary["name"] as? String
         
         let imageURLString = dictionary["image_url"] as? String
-        if imageURLString != nil {
+        if imageURLString != nil && imageURLString != ""{
             imageURL = URL(string: imageURLString!)!
         } else {
             imageURL = nil
