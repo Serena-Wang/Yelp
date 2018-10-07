@@ -22,9 +22,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XK8-eB-z3A">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XK8-eB-z3A">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <searchBar key="tableHeaderView" contentMode="redraw" insetsLayoutMarginsFromSafeArea="NO" id="O13-aC-cg8">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -127,6 +126,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XK8-eB-z3A" firstAttribute="top" secondItem="gHS-EY-HdL" secondAttribute="bottom" id="2Jq-Y0-FVh"/>
+                            <constraint firstAttribute="trailing" secondItem="XK8-eB-z3A" secondAttribute="trailing" id="4ZC-UA-RtS"/>
+                            <constraint firstItem="XK8-eB-z3A" firstAttribute="leading" secondItem="XhR-oz-92f" secondAttribute="leading" id="9hb-IJ-hgi"/>
+                            <constraint firstAttribute="bottom" secondItem="XK8-eB-z3A" secondAttribute="bottom" id="miH-La-Z49"/>
+                        </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" title="Yelp" id="RkH-pp-aah"/>
